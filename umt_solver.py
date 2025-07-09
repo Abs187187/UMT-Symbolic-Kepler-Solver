@@ -1,3 +1,4 @@
+import math
 import numpy as np
 
 def umt_elliptical(M, e, terms=30):
@@ -8,7 +9,8 @@ def umt_elliptical(M, e, terms=30):
     terms: number of harmonic terms in the expansion
     Returns eccentric anomaly E [radians]
     """
-    E0 = M + sum((e**k / np.math.factorial(k)) * np.sin(k*M) for k in range(1, terms+1))
+    # Use math.factorial here, NOT np.math.factorial
+    E0 = M + sum((e**k / math.factorial(k)) * np.sin(k*M) for k in range(1, terms+1))
     E1 = E0 - (E0 - e*np.sin(E0) - M) / (1 - e*np.cos(E0))
     for _ in range(2):
         E1 = E1 - (E1 - e*np.sin(E1) - M) / (1 - e*np.cos(E1))
