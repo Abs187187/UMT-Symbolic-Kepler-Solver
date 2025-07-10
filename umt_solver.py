@@ -44,4 +44,4 @@ def umt_hyperbolic(M, e):
     H = H1
     for _ in range(2):
         H = H - (e*np.sinh(H) - H - M) / (e*np.cosh(H) - 1)
-    return H
+    return H  # <--- this must be at the same indentation as the 'for' loop above
