@@ -13,7 +13,7 @@ def umt_elliptical(M, e, terms=30):
     E1 = E0 - (E0 - e*np.sin(E0) - M) / (1 - e*np.cos(E0))
     for _ in range(2):
         E1 = E1 - (E1 - e*np.sin(E1) - M) / (1 - e*np.cos(E1))
-    return E1
+    return E1  # <-- THIS WAS MISSING
 
 def umt_hyperbolic(M, e):
     """
