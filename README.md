@@ -69,7 +69,7 @@ See /data/ folder for details.
 How to Cite
 If you use this repository, algorithm, or datasets, please cite:
 
-Abs187187. (2025). UMT-Symbolic-Kepler-Solver (Version 1.0) [Computer software]. Zenodo.
+Abs187187. (2025). UMT-Symbolic-Kepler-Solver (Version 1.0) [Computer software]. Zenodo. [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15936438.svg)](https://doi.org/10.5281/zenodo.15936438)
 https://github.com/Abs187187/UMT-Symbolic-Kepler-Solver
 
 License
